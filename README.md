@@ -1,5 +1,7 @@
 # Merge sorted collections (TypeScript)
 
+[Public GitHub repository](https://github.com/phuchit111/merge-sorted-collections)
+
 Merge two arrays ordered from minimum to maximum and one array ordered from
 maximum to minimum. The result is a new array ordered in ascending order.
 Duplicates and zeros are preserved, empty arrays are supported, and the input
@@ -7,9 +9,12 @@ arrays are never modified. No sorting function or array reversal is used.
 
 ## Requirements and dependency setup
 
-Install Node.js 22 or newer with npm. Open a terminal in this repository and run:
+Install Node.js 22 or newer with npm. Clone the repository and install its
+dependencies:
 
 ```sh
+git clone https://github.com/phuchit111/merge-sorted-collections.git
+cd merge-sorted-collections
 npm ci
 ```
 
@@ -131,17 +136,3 @@ package-lock.json    Reproducible dependency versions
 tsconfig.json        Strict TypeScript compiler settings
 ```
 
-## Publish an accessible repository
-
-The supplied project is a local Git repository. To give other people a hosted
-repository URL, create an empty public repository in your Git hosting account,
-then use its actual URL in these commands:
-
-```sh
-git remote add origin https://github.com/YOUR_USERNAME/merge-sorted-collections.git
-git push -u origin main
-```
-
-Replace `YOUR_USERNAME` with your account name. Do not initialize the hosted
-repository with another README, license, or `.gitignore`; this project already
-has its own files and initial commit.
