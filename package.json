@@ -1,0 +1,23 @@
+{
+  "name": "merge-sorted-collections",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Merge two ascending integer arrays and one descending integer array in linear time.",
+  "type": "module",
+  "main": "./dist/src/merge.js",
+  "types": "./dist/src/merge.d.ts",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "npm run build && node dist/src/example.js",
+    "test": "npm run build && node --test dist/test/merge.test.js",
+    "test:coverage": "npm run build && node --test --experimental-test-coverage dist/test/merge.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "typescript": "7.0.2"
+  }
+}
